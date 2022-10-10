@@ -1,0 +1,197 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: poppins;
+}
+
+a {
+   text-decoration: none;
+}
+/* navbar */
+#navbar {
+   background-color: white !important;
+   width: 100%;
+   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.08);
+}
+#navbar .navbar-brand {
+   width: 15%;
+}
+#navbar .navbar-brand img {
+   width: 40%;
+}
+
+#navbar .navbar-nav a {
+   color: black;
+}
+
+.offcanvas {
+   width: 80% !important;
+}
+
+/* hero */
+#hero .container {
+   height: 85vh;
+}
+
+#hero .small-title {
+   font-size: 14px;
+   font-weight: 500;
+   border: none;
+   background-color: #fee9de;
+   color: #eb5757;
+   border-radius: 20px;
+}
+
+#hero .heading-title {
+   font-size: 70px;
+}
+
+#hero .description {
+   color: #33333399;
+   font-size: 18px;
+   width: 80%;
+}
+
+#hero .main-button {
+   background-color: #eb5757;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+}
+
+#hero .main-button a {
+   color: white;
+}
+
+#hero .secondary-button {
+   background-color: white;
+   color: #eb5757;
+   padding: 10px 20px;
+   border: 1px solid #eb5757;
+   border-radius: 5px;
+}
+
+#hero .secondary-button a {
+   color: #eb5757;
+}
+
+#hero img.hero-img {
+   width: 100%;
+}
+
+/* layanan */
+#layanan h1.heading {
+   width: 50%;
+   margin: 0 auto;
+   font-weight: 600;
+   font-size: 40px;
+}
+#layanan .card {
+   border: none;
+}
+
+#layanan .card h4.card-title {
+   font-weight: 600;
+}
+
+#layanan .card p.card-text {
+   color: #33333380;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.layanan-img {
+   margin: 0 auto;
+}
+
+/* product */
+#product h1.heading {
+   width: 50%;
+   margin: 0 auto;
+   font-weight: 600;
+   font-size: 40px;
+}
+
+#product button.btn-filter {
+   color: black;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   border-radius: 20px;
+   justify-content: space-evenly;
+}
+#product button.btn-filter.active {
+   background-color: #eb5757;
+   color: white;
+}
+
+#product button.main-button {
+   background-color: #eb5757;
+   color: white;
+   padding: 2% 4%;
+   border: none;
+   border-radius: 5px;
+   width: 50%;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   display: none;
+}
+
+#product .card {
+   border: none;
+}
+
+#product .card a {
+   text-decoration: none;
+   color: white;
+}
+#product .card:hover button.main-button {
+   display: block;
+}
+#product .card:hover img.card-img {
+   filter: blur(1px) brightness(50%);
+}
+
+/* order */
+#order .container {
+   background-color: #ffddcc40;
+}
+#order h1.heading {
+   margin: 0 auto;
+   font-weight: 600;
+   font-size: 40px;
+}
+#order img.order-img {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+#order .ecommerce {
+   bottom: 10%;
+   right: 5%;
+}
+#order .ecommerce img {
+   width: 23%;
+   height: auto;
+}
+
+/* footer */
+.container-fluid {
+   background-color: #9c0001;
+}
+#footer p,
+h6 {
+   color: white;
+}
+#footer p {
+   font-size: 14px;
+}
+
+#footer ul li {
+   color: white;
+   list-style: none;
+}

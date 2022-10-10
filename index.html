@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Bos Steak</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <!-- navbar -->
+      <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+         <div class="container d-flex">
+            <a class="navbar-brand" href="#home">
+               <img src="assets/Logo Brand.png" alt="" />
+            </a>
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="offcanvas"
+               data-bs-target="#offcanvasNavbar"
+               aria-controls="offcanvasNavbar"
+            >
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+               class="offcanvas offcanvas-end"
+               tabindex="-1"
+               id="offcanvasNavbar"
+               aria-labelledby="offcanvasNavbarLabel"
+            >
+               <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navbar</h5>
+                  <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="offcanvas"
+                     aria-label="Close"
+                  ></button>
+               </div>
+               <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end gap-3 flex-grow-1">
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"> Beranda </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#layanan"> Layanan </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#product"> Menu </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contact"> Contact </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- hero -->
+      <div id="hero" class="hero">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6 gap-4">
+                  <button class="small-title py-2 px-4">Saatnya Makan Enak 🥩</button>
+                  <h1 class="heading-title fw-bold lh-sm my-3">
+                     Halal <br />
+                     Steak House 🍗
+                  </h1>
+                  <p class="description">
+                     Rempah spesial dengan kualitas daging premium setara daging impor yang pastinya
+                     halal.
+                  </p>
+                  <div class="button d-flex gap-4 my-4">
+                     <button class="main-button"><a href="#contact">Pesan Sekarang</a></button>
+                     <button class="secondary-button"><a href="#menu">Pesan Sekarang</a></button>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <img src="assets/Hero image.png" alt="" class="hero-img" />
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- hero end -->
+
+      <!-- layanan -->
+      <div id="layanan" class="layanan">
+         <div class="container">
+            <div class="title text-center">
+               <p style="color: #eb5757">LAYANAN KAMI</p>
+               <h1 class="heading">Saatnya Makan Enak dengan Bosteak</h1>
+            </div>
+            <div class="row my-5 justify-content-between">
+               <div class="col-md-4">
+                  <div class="card d-flex flex-column justify-content-center">
+                     <img src="assets/layanan1.png" class="card-img-top w-50 layanan-img" />
+                     <div class="card-body text-center">
+                        <h4 class="card-title">Makan di Resto</h4>
+                        <p class="card-text">
+                           Dapatkan sajian mewah dari resto kami di Cilacap, Jateng.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="card d-flex flex-column justify-content-center">
+                     <img src="assets/layanan2.png" class="card-img-top w-50 layanan-img" />
+                     <div class="card-body text-center">
+                        <h4 class="card-title">Delivery</h4>
+                        <p class="card-text">
+                           Tetap bisa makan enak walaupun jauh dengan produk stik marinasi.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="card d-flex flex-column justify-content-center">
+                     <img src="assets/layanan3.png" class="card-img-top w-50 layanan-img" />
+                     <div class="card-body text-center">
+                        <h4 class="card-title">Best Quality</h4>
+                        <p class="card-text">
+                           Kualitas tetap terjaga baik diresto maupun produk frozen yang dikirim.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- layanan end -->
+
+      <!-- product -->
+      <div id="product" class="product my-5">
+         <div class="container">
+            <div class="title text-center mb-4">
+               <p style="color: #eb5757">PRODUK KAMI</p>
+               <h1 class="heading mb-4">Menu terbaik untuk teman #MakanEnak kamu</h1>
+            </div>
+            <div class="menu-product">
+               <ul
+                  class="nav nav-pills mb-3 d-flex justify-content-center gap-3 mb-4"
+                  id="pills-tab"
+                  role="tablist"
+               >
+                  <li class="nav-item" role="presentation">
+                     <button
+                        class="nav-link btn-filter active"
+                        id="pills-resto-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-resto"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-resto"
+                        aria-selected="true"
+                     >
+                        <img src="assets/resto-ico.png" alt="" style="width: 25%" />
+                        Resto
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button
+                        class="nav-link btn-filter"
+                        id="pills-marinasi-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-marinasi"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-marinasi"
+                        aria-selected="false"
+                     >
+                        <img src="assets/resto-ico.png" alt="" style="width: 15%" />
+                        Stik Marinasi
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button
+                        class="nav-link btn-filter"
+                        id="pills-dendeng-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-dendeng"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-dendeng"
+                        aria-selected="false"
+                     >
+                        <img src="assets/resto-ico.png" alt="" style="width: 15%" />
+                        Dendeng
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button
+                        class="nav-link btn-filter"
+                        id="pills-sambal-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-sambal"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-sambal"
+                        aria-selected="false"
+                     >
+                        <img src="assets/resto-ico.png" alt="" style="width: 12%" />
+                        Sambal Bos Cabe
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button
+                        class="nav-link btn-filter"
+                        id="pills-marinated-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-marinated"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-marinated"
+                        aria-selected="false"
+                     >
+                        <img src="assets/resto-ico.png" alt="" style="width: 11%" />
+                        Marinated Seasoning
+                     </button>
+                  </li>
+               </ul>
+               <div class="tab-content" id="pills-tabContent">
+                  <div
+                     class="tab-pane fade show active"
+                     id="pills-resto"
+                     role="tabpanel"
+                     aria-labelledby="pills-resto-tab"
+                     tabindex="0"
+                  >
+                     <div class="row">
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card position-relative rounded">
+                              <img src="assets/resto1.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/resto2.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/resto3.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/resto4.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/resto5.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/resto6.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="tab-pane fade"
+                     id="pills-marinasi"
+                     role="tabpanel"
+                     aria-labelledby="pills-marinasi-tab"
+                     tabindex="0"
+                  >
+                     <div class="row">
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card position-relative rounded">
+                              <img src="assets/stik1.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/stik2.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/stik3.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/stik4.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="tab-pane fade"
+                     id="pills-dendeng"
+                     role="tabpanel"
+                     aria-labelledby="pills-dendeng-tab"
+                     tabindex="0"
+                  >
+                     <div class="row">
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card position-relative rounded">
+                              <img src="assets/dedeng1.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/dedeng2.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/dedeng3.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="tab-pane fade"
+                     id="pills-sambal"
+                     role="tabpanel"
+                     aria-labelledby="pills-sambal-tab"
+                     tabindex="0"
+                  >
+                     <div class="row">
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card position-relative rounded">
+                              <img src="assets/dambal1.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/dambal2.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/dambal3.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/resto4.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/resto5.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/resto6.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="tab-pane fade"
+                     id="pills-marinated"
+                     role="tabpanel"
+                     aria-labelledby="pills-marinated-tab"
+                     tabindex="0"
+                  >
+                     <div class="row">
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card position-relative rounded">
+                              <img src="assets/nate1.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-4 col-6">
+                           <div class="card">
+                              <img src="assets/nate2.png" class="card-img" alt="..." />
+                              <button class="main-button"><a href="">Order Now</a></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- product end -->
+
+      <!-- order -->
+      <div id="order" class="order">
+         <div class="container p-5 position-relative">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="title-order">
+                     <p style="color: #eb5757">PESAN SEKARANG !</p>
+                     <h1 class="heading">Kami hadir di berbagai platform</h1>
+                     <p class="mt-3">Demi kemudahan anda untuk #MakanEnak!</p>
+                  </div>
+                  <div class="cs-contact d-flex flex-column gap-3">
+                     <div class="cs1">
+                        <a href="">
+                           <img src="assets/cs1.png" alt="" style="width: 50%" />
+                        </a>
+                     </div>
+                     <div class="cs2">
+                        <a href="">
+                           <img src="assets/cs2.png" alt="" style="width: 50%" />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="img">
+                     <img src="assets/order-img.png" alt="" style="width: 40%" class="order-img" />
+                  </div>
+               </div>
+               <div class="col-md-6 ecommerce position-absolute">
+                  <div class="d-flex justify-content-between">
+                     <img src="assets/tokped.png" alt="" />
+                     <img src="assets/shopee.png" alt="" />
+                     <img src="assets/blibli.png" alt="" />
+                     <img src="assets/bukalapak.png" alt="" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- order end -->
+
+      <!-- footer -->
+      <footer id="footer" class="footer">
+         <div class="container-fluid">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3">
+                     <a href="">
+                        <img src="assets/logofoot.png" alt="" />
+                     </a>
+                  </div>
+                  <div class="col-md-3">
+                     <h6>Contact Us</h6>
+                     <div class="location d-flex gap-2">
+                        <img src="assets/location.png" alt="" width="25" height="25" class="mt-2" />
+                        <p>Jl.Anggrek, Ruko Anggrek No1 Cilacap Jawa Tengah</p>
+                     </div>
+                     <div class="mail d-flex gap-2">
+                        <img src="assets/mail.png" alt="" width="25" height="25" />
+                        <p>bosteakcafe@gmail.com</p>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <ul class="d-flex flex-column gap-2">
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>Gallery</li>
+                        <li>Team</li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <h6>Subscribe</h6>
+                     <input type="text" /> <br />
+                     <button>Subscribe</button>
+                     <h6>Follow us</h6>
+                     <div class="sosmed"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer end -->
+      <!-- bootstrap JS -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+         crossorigin="anonymous"
+      ></script>
+   </body>
+</html>
